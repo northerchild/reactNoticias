@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import Header from './componets/Header';
-
+import ListasNoticias from './componets/ListasNoticia';
 class App extends Component{
   state={
     noticias: []
@@ -25,7 +25,7 @@ class App extends Component{
       <Fragment>
         <Header titulo='Noticias REACT API'/>
         <div className='container white contenedor-noticias'>
-
+            <ListasNoticias noticias={this.state.noticias}/>
         </div>
       </Fragment>
     )
