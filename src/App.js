@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import Header from './componets/Header';
 import ListasNoticias from './componets/ListasNoticia';
+import Formulario from './componets/formulario';
 class App extends Component{
   state={
     noticias: []
@@ -24,6 +25,7 @@ class App extends Component{
     return(
       <Fragment>
         <Header titulo='Noticias REACT API'/>
+        <Formulario />
         <div className='container white contenedor-noticias'>
             <ListasNoticias noticias={this.state.noticias}/>
         </div>
